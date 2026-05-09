@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jamf-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jamf
+  template:
+    metadata:
+      labels:
+        app: jamf
+    spec:
+      containers:
+      - name: jamf-app
+        image: nginx:1.25
+        ports:
+        - containerPort: 80
