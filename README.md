@@ -1,5 +1,7 @@
 # jamf-cloud-ops-minikube
-Local Kubernetes style lab that closely mirrors a Jamf Cloud Operations environment.
+A local Kubernetes lab built with Minikube and Docker to simulate a Jamf-like Cloud Ops environment.
+
+This project was designed to help bridge my background in Jamf technical support with hands-on Cloud Operations skills. It includes multi-tenant customer namespaces, application and database services, ingress routing, operational tooling through a Bash wrapper, and a simple change-control simulation workflow.
 
 Goal: Simulate how Jamf Cloud Operations would operate hosted Jamf instances in a cloud native environment using Kubernetes plus an orchestration layer (Atlas/Hermes).
 
